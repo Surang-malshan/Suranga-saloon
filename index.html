@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Suranga Saloon</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-orange-50 to-pink-100 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-gray-900 text-white py-6 shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto text-center">
+      <h1 class="text-3xl font-bold">Suranga Saloon</h1>
+      <nav class="mt-3">
+        <a href="#home" class="mx-3 hover:text-orange-400">Home</a>
+        <a href="#services" class="mx-3 hover:text-orange-400">Services</a>
+        <a href="#contact" class="mx-3 hover:text-orange-400">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Home -->
+  <section id="home" class="py-20 px-6 text-center max-w-3xl mx-auto">
+    <h2 class="text-4xl font-bold text-orange-600 mb-4">Welcome to Suranga Saloon</h2>
+    <p class="text-lg mb-4">
+      At Suranga Saloon, we redefine beauty and grooming with elegance and care. Whether you're looking for a fresh haircut, a relaxing facial, or just a moment to pamper yourself, we are here for you. Our professional team ensures a premium experience every time.
+    </p>
+    <p class="text-lg">
+      Clean. Classy. Confident. Come experience a new level of style at Suranga Saloon!
+    </p>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-20 px-6 bg-white">
+    <h2 class="text-3xl font-bold text-center text-orange-600 mb-10">Our Services</h2>
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+      <div class="bg-orange-100 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Hair Cutting</h3>
+        <p>Professional styles for all ages — from trendy fades to classic cuts.</p>
+      </div>
+      <div class="bg-orange-100 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Beard Trimming</h3>
+        <p>Sharp lines and clean fades to define your unique look.</p>
+      </div>
+      <div class="bg-orange-100 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Facial Treatments</h3>
+        <p>Relaxing facials that cleanse and nourish your skin naturally.</p>
+      </div>
+      <div class="bg-orange-100 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Hair Coloring</h3>
+        <p>Vibrant tones and subtle shades — all done with the utmost care.</p>
+      </div>
+      <div class="bg-orange-100 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Head Massage</h3>
+        <p>Oil massages that ease your stress and refresh your mind.</p>
+      </div>
+      <div class="bg-orange-100 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Bridal & Groom Packages</h3>
+        <p>Exclusive wedding day makeovers to make your day unforgettable.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 px-6 text-center max-w-2xl mx-auto">
+    <h2 class="text-3xl font-bold text-orange-600 mb-6">Get in Touch</h2>
+    <p class="mb-4">We’re located at No. 45, Main Road, Kandy. Open daily from 9:00 AM to 8:00 PM.</p>
+    <p class="mb-6">Call us at <span class="font-bold text-orange-600">+94 77 123 4567</span> or send a message below:</p>
+    <form onsubmit="handleForm(event)" class="bg-white p-6 rounded-xl shadow-md">
+      <input type="text" placeholder="Your Name" required class="w-full p-3 mb-4 border border-gray-300 rounded" />
+      <input type="email" placeholder="Your Email" required class="w-full p-3 mb-4 border border-gray-300 rounded" />
+      <textarea placeholder="Your Message" rows="4" class="w-full p-3 mb-4 border border-gray-300 rounded"></textarea>
+      <button type="submit" class="bg-orange-500 text-white py-3 px-6 rounded hover:bg-orange-600 transition">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 text-center">
+    &copy; 2025 Suranga Saloon. Crafted with ❤️ using Tailwind CSS.
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function handleForm(event) {
+      event.preventDefault();
+      alert("Thank you for contacting Suranga Saloon! We'll get back to you soon.");
+    }
+  </script>
+
+</body>
+</html>
