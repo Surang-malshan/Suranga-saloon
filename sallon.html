@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Suranga Saloon</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white font-sans relative z-10">
+
+  <!-- Animated Background (p5.js canvas goes behind) -->
+  <script>
+    function setup() {
+      createCanvas(windowWidth, windowHeight);
+      noStroke();
+    }
+    function draw() {
+      background(15, 15, 15, 20);
+      fill(255, 100);
+      ellipse(mouseX, mouseY, 50, 50);
+    }
+    function windowResized() {
+      resizeCanvas(windowWidth, windowHeight);
+    }
+  </script>
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-opacity-50 backdrop-blur-md bg-gray-800 text-white shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold tracking-wider">Suranga Saloon</h1>
+      <nav class="space-x-4 text-sm font-medium">
+        <a href="#home" class="hover:text-orange-400">Home</a>
+        <a href="#services" class="hover:text-orange-400">Services</a>
+        <a href="#features" class="hover:text-orange-400">Features</a>
+        <a href="#contact" class="hover:text-orange-400">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex items-center justify-center px-6 pt-32 text-center relative z-10">
+    <div class="max-w-3xl">
+      <h2 class="text-5xl md:text-6xl font-extrabold text-white mb-6 leading-tight">Step Into Style</h2>
+      <p class="text-lg md:text-xl text-gray-300 mb-8">Where every trim, every shave, and every service is a step toward your best self.</p>
+      <a href="#services" class="inline-block bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full shadow-lg transition">Explore Services</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-24 bg-gray-950 relative z-10">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-4xl font-bold text-orange-400 mb-12 text-center">Our Signature Services</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-orange-500 transition">
+          <h4 class="text-xl font-semibold mb-2">Hair Styling</h4>
+          <p>Modern cuts, fades, and custom designs tailored to your style.</p>
+        </div>
+        <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-orange-500 transition">
+          <h4 class="text-xl font-semibold mb-2">Luxury Beard Trim</h4>
+          <p>Detailed trims, sculpting, and beard oils for a royal finish.</p>
+        </div>
+        <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-orange-500 transition">
+          <h4 class="text-xl font-semibold mb-2">Deep Facials</h4>
+          <p>Rejuvenate your skin with a refreshing, hydrating glow-up.</p>
+        </div>
+        <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-orange-500 transition">
+          <h4 class="text-xl font-semibold mb-2">Hair Coloring</h4>
+          <p>Express your mood with a pop of vibrant or subtle color.</p>
+        </div>
+        <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-orange-500 transition">
+          <h4 class="text-xl font-semibold mb-2">Head Massage</h4>
+          <p>Relax your soul with our ayurvedic scalp massage therapy.</p>
+        </div>
+        <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-orange-500 transition">
+          <h4 class="text-xl font-semibold mb-2">Bridal Grooming</h4>
+          <p>Look your best for the big day with premium grooming packages.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-24 px-6 bg-gray-900 relative z-10">
+    <div class="max-w-5xl mx-auto text-center">
+      <h3 class="text-4xl font-bold text-orange-400 mb-10">Why Choose Us?</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-left">
+        <div>
+          <h4 class="text-xl font-semibold mb-2">🧼 Hygienic Standards</h4>
+          <p>We maintain world-class cleanliness and sterilization protocols for your safety.</p>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold mb-2">🎓 Expert Stylists</h4>
+          <p>Every member of our team is certified, skilled, and up-to-date with global trends.</p>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold mb-2">✨ Custom Experience</h4>
+          <p>No one-size-fits-all here — everything is personalized to your preference.</p>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold mb-2">⚡ Fast & Flexible</h4>
+          <p>Quick appointments, online booking (coming soon!), and flexible scheduling.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 px-6 bg-gray-950 relative z-10">
+    <div class="max-w-xl mx-auto text-center">
+      <h3 class="text-4xl font-bold text-orange-400 mb-8">Contact Us</h3>
+      <p class="mb-4">📍 No. 45, Main Street, Kandy</p>
+      <p class="mb-4">📞 +94 77 123 4567</p>
+      <p class="mb-8">🕒 Open Daily | 9:00 AM – 8:00 PM</p>
+      <form onsubmit="submitForm(event)" class="space-y-4 bg-gray-800 p-6 rounded-xl shadow-lg">
+        <input type="text" placeholder="Name" required class="w-full p-3 rounded bg-gray-900 text-white border border-gray-700">
+        <input type="email" placeholder="Email" required class="w-full p-3 rounded bg-gray-900 text-white border border-gray-700">
+        <textarea rows="4" placeholder="Message" class="w-full p-3 rounded bg-gray-900 text-white border border-gray-700"></textarea>
+        <button type="submit" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full transition">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-center text-sm py-6 text-gray-400">
+    © 2025 Suranga Saloon — Crafted with Tailwind, p5.js & ❤️
+  </footer>
+
+  <script>
+    function submitForm(e) {
+      e.preventDefault();
+      alert("Thanks for reaching out! We'll contact you soon.");
+    }
+  </script>
+</body>
+</html>
